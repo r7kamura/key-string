@@ -39,6 +39,10 @@ document.addEventListener('keydown', (event) => {
 });
 ```
 
+### For more details
+- [Key mapping](https://github.com/r7kamura/key-string/blob/master/src/key-string-map.js)
+- [Test cases](https://github.com/r7kamura/key-string/blob/master/test/key-string-detector.test.js)
+
 ## For contributors
 ```sh
 # Set up
