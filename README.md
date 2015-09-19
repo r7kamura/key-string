@@ -8,7 +8,7 @@ npm install key-string
 
 ## Usage
 ```js
-import { KeyStringDetector } from 'key-string'
+import KeyStringDetector from 'key-string'
 
 const detector = new KeyStringDetector();
 detector.detect(event); //=> "Alt+Ctrl+Return"
