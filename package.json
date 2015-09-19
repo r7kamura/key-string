@@ -1,0 +1,27 @@
+{
+  "name": "key-string",
+  "version": "0.0.1",
+  "description": "Detect keyboard event type from KeyboardEvent.",
+  "repository": "https://github.com/r7kamura/key-string",
+  "main": "lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "dependencies": {
+    "gulp": "^3.9.0"
+  },
+  "devDependencies": {
+    "babel": "^5.8.23",
+    "gulp-babel": "^5.2.1",
+    "gulp-mocha": "^2.1.3",
+    "gulp-plumber": "^1.0.1",
+    "gulp-watch": "^4.3.5"
+  },
+  "scripts": {
+    "compile": "gulp compile",
+    "test": "gulp test",
+    "watch": "gulp watch"
+  },
+  "author": "Ryo Nakamura <r7kamura@gmail.com> (https://github.com/r7kamura)",
+  "license": "MIT"
+}
