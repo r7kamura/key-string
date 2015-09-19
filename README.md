@@ -15,7 +15,7 @@ detector.detect(event); //=> "Alt+Ctrl+Return"
 ```
 
 ### Import
-Import in your favorite styles.
+Import in your favorite style.
 
 ```js
 // Pattern 1: Using a default export
