@@ -53,3 +53,7 @@ npm run watch
 # Run tests
 npm run test
 ```
+
+## Inspired by
+- [cho45/keyString.js](https://github.com/cho45/keyString.js)
+- [electron/accelerator](https://github.com/atom/electron/blob/7bb9595b81953da359aa6502a21b7fd72c07f92a/docs/api/accelerator.md)
