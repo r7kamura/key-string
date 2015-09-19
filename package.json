@@ -1,6 +1,6 @@
 {
   "name": "key-string",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Detect keyboard event type from KeyboardEvent.",
   "repository": "https://github.com/r7kamura/key-string",
   "main": "lib/index.js",
