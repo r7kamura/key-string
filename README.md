@@ -34,7 +34,7 @@ import { KeyStringDetector } from 'key-string'
 
 const detector = new KeyStringDetector();
 
-document.body.addEventListener('keydown', (event) => {
+document.addEventListener('keydown', (event) => {
   console.log(detector.detect(event));
 });
 ```
