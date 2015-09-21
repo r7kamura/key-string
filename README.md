@@ -11,7 +11,10 @@ npm install key-string
 import KeyStringDetector from 'key-string'
 
 const detector = new KeyStringDetector();
-detector.detect(event); //=> "Alt+Ctrl+Return"
+
+document.addEventListener('keydown', (event) => {
+  console.log(detector.detect(event)); //=> "Alt+Ctrl+Return"
+});
 ```
 
 ### Import
@@ -26,17 +29,6 @@ import { KeyStringDetector, keyStringMap } from 'key-string'
 
 // Pattern 3: Using both a default export and named exports
 import KeyStringDetector, { keyStringMap } from 'key-string'
-```
-
-### Example
-```js
-import { KeyStringDetector } from 'key-string'
-
-const detector = new KeyStringDetector();
-
-document.addEventListener('keydown', (event) => {
-  console.log(detector.detect(event));
-});
 ```
 
 ### For more details
