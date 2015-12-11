@@ -33,7 +33,14 @@ describe('KeyStringDetector', () => {
       );
     });
 
-    it('detects Unknown', () => {
+    it('detects Meta+Return', () => {
+      assert.equal(
+        detector.detect({ metaKey: true, keyCode: 13 }),
+        'Meta+Return'
+      );
+    });
+
+   it('detects Unknown', () => {
       assert.equal(
         detector.detect({ keyCode: 0 }),
         'Unknown'

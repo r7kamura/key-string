@@ -16,6 +16,9 @@ export default class KeyStringDetector {
     if (event.altKey) {
       keyString = `Alt+${keyString}`;
     }
+    if (event.metaKey) {
+      keyString = `Meta+${keyString}`;
+    }
     keyString += keyStringMap[event.keyCode] || 'Unknown';
     return keyString;
   }
