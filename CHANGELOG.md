@@ -1,3 +1,6 @@
+## 0.2.3
+- Change export style
+
 ## 0.2.2
 - Fix export syntax
 
