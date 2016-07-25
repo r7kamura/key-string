@@ -5,7 +5,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.default = detect;
-var keyStringMap = exports.keyStringMap = {
+var keyStringMap = {
   8: "BackSpace",
   9: "Tab",
   13: "Return",
@@ -92,5 +92,7 @@ function detect(event) {
   keyString += keyStringMap[event.keyCode] || "Unknown";
   return keyString;
 }
+
+exports.keyStringMap = keyStringMap;
 
 },{}]},{},[1]);

@@ -1,4 +1,4 @@
-export const keyStringMap = {
+const keyStringMap = {
   8: "BackSpace",
   9: "Tab",
   13: "Return",
@@ -85,3 +85,5 @@ export default function detect(event) {
   keyString += keyStringMap[event.keyCode] || "Unknown";
   return keyString;
 }
+
+export { keyStringMap };
