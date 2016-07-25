@@ -1,4 +1,4 @@
-# key-string
+# key-string [![Build Status](https://travis-ci.org/r7kamura/key-string.svg?branch=master)](https://travis-ci.org/r7kamura/key-string)
 Detect keyboard event type from KeyboardEvent.
 
 ## Install
