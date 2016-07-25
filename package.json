@@ -4,15 +4,27 @@
   "version": "0.1.0",
   "author": "Ryo Nakamura <r7kamura@gmail.com> (https://github.com/r7kamura)",
   "devDependencies": {
+    "babel-core": "^6.11.4",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-3": "^6.11.0",
+    "babelify": "^7.3.0",
+    "browserify": "^13.0.1",
     "eslint": "^3.1.1",
-    "fixpack": "^2.3.1"
+    "fixpack": "^2.3.1",
+    "mocha": "^2.5.3"
   },
   "license": "MIT",
   "main": "src/key-string.js",
   "repository": "https://github.com/r7kamura/key-string",
   "scripts": {
+    "build": "npm run build:rm && npm run build:mkdir && npm run build:js",
+    "build:js": "browserify src/key-string.js -t babelify -o dist/key-string.js",
+    "build:mkdir": "mkdir dist",
+    "build:rm": "rm -rf dist",
     "lint": "npm run lint:eslint && npm run lint:fixpack",
-    "lint:eslint": "eslint src/**/*.js",
-    "lint:fixpack": "fixpack | grep 'already clean'"
+    "lint:eslint": "eslint {src,test}/**/*.js",
+    "lint:fixpack": "fixpack | grep 'already clean'",
+    "test": "npm run lint && npm run test:mocha",
+    "test:mocha": "mocha --compilers js:babel-core/register"
   }
 }
