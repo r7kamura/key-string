@@ -1,3 +1,6 @@
+## 0.2.1
+- Export ES6 src as main file
+
 ## 0.2.0
 - Export detect function by default
 
