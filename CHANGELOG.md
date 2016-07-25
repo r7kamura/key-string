@@ -1,3 +1,6 @@
+## 0.2.0
+- Export detect function by default
+
 ## 0.1.0
 - Support Meta key
 
