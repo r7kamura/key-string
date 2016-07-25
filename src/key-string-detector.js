@@ -1,4 +1,4 @@
-import keyStringMap from './key-string-map'
+import keyStringMap from "./key-string-map";
 
 export default class KeyStringDetector {
   /**
@@ -6,7 +6,7 @@ export default class KeyStringDetector {
    * @return {String}
    */
   detect(event)  {
-    let keyString = '';
+    let keyString = "";
     if (event.shiftKey) {
       keyString = `Shift+${keyString}`;
     }
@@ -19,7 +19,7 @@ export default class KeyStringDetector {
     if (event.metaKey) {
       keyString = `Meta+${keyString}`;
     }
-    keyString += keyStringMap[event.keyCode] || 'Unknown';
+    keyString += keyStringMap[event.keyCode] || "Unknown";
     return keyString;
   }
 }

@@ -5,8 +5,11 @@
   "repository": "https://github.com/r7kamura/key-string",
   "main": "src/key-string.js",
   "devDependencies": {
+    "eslint": "^3.1.1"
   },
   "scripts": {
+    "lint": "npm run lint:eslint",
+    "lint:eslint": "eslint src/**/*.js"
   },
   "author": "Ryo Nakamura <r7kamura@gmail.com> (https://github.com/r7kamura)",
   "license": "MIT"
