@@ -14,7 +14,7 @@
     "mocha": "^2.5.3"
   },
   "license": "MIT",
-  "main": "src/key-string.js",
+  "main": "dist/key-string.js",
   "repository": "https://github.com/r7kamura/key-string",
   "scripts": {
     "build": "npm run build:rm && npm run build:mkdir && npm run build:js",
