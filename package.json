@@ -1,16 +1,18 @@
 {
   "name": "key-string",
-  "version": "0.1.0",
   "description": "Detect keyboard event type from KeyboardEvent.",
-  "repository": "https://github.com/r7kamura/key-string",
-  "main": "src/key-string.js",
-  "devDependencies": {
-    "eslint": "^3.1.1"
-  },
-  "scripts": {
-    "lint": "npm run lint:eslint",
-    "lint:eslint": "eslint src/**/*.js"
-  },
+  "version": "0.1.0",
   "author": "Ryo Nakamura <r7kamura@gmail.com> (https://github.com/r7kamura)",
-  "license": "MIT"
+  "devDependencies": {
+    "eslint": "^3.1.1",
+    "fixpack": "^2.3.1"
+  },
+  "license": "MIT",
+  "main": "src/key-string.js",
+  "repository": "https://github.com/r7kamura/key-string",
+  "scripts": {
+    "lint": "npm run lint:eslint && npm run lint:fixpack",
+    "lint:eslint": "eslint src/**/*.js",
+    "lint:fixpack": "fixpack | grep 'already clean'"
+  }
 }
