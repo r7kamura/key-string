@@ -1,52 +1,39 @@
 # key-string [![Build Status](https://travis-ci.org/r7kamura/key-string.svg?branch=master)](https://travis-ci.org/r7kamura/key-string)
+
 Detect keyboard event type from KeyboardEvent.
 
 ## Install
+
 ```sh
 npm install key-string
 ```
 
 ## Usage
+
 ```js
-import KeyStringDetector from 'key-string'
-
-const detector = new KeyStringDetector();
-
+import detect from "key-string"
 document.addEventListener('keydown', (event) => {
-  console.log(detector.detect(event)); //=> "Alt+Ctrl+Return"
+  console.log(detect(event)); //=> "Alt+Ctrl+Return"
 });
 ```
 
-### Import
-Import in your favorite style.
+## Development
 
-```js
-// Pattern 1: Using a default export
-import KeyStringDetector from 'key-string'
+### Set up
 
-// Pattern 2: Using named exports
-import { KeyStringDetector, keyStringMap } from 'key-string'
-
-// Pattern 3: Using both a default export and named exports
-import KeyStringDetector, { keyStringMap } from 'key-string'
+```sh
+npm install
 ```
 
-### For more details
-- [Key mapping](https://github.com/r7kamura/key-string/blob/master/src/key-string-map.js)
-- [Test cases](https://github.com/r7kamura/key-string/blob/master/test/key-string-detector.test.js)
+### Build
 
-## For contributors
 ```sh
-# Set up
-npm install
+npm run build
+```
 
-# Compile JavaScript files
-npm run compile
+### Test
 
-# Watch changes of JavaScript files
-npm run watch
-
-# Run tests
+```sh
 npm run test
 ```
 
