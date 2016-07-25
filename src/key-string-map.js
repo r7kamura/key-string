@@ -64,26 +64,4 @@ const keyStringMap = {
   123: "F12"
 };
 
-/**
- * @param event {KeyboardEvent}
- * @returns {String}
- */
-export default function detect(event) {
-  let keyString = "";
-  if (event.shiftKey) {
-    keyString = `Shift+${keyString}`;
-  }
-  if (event.ctrlKey) {
-    keyString = `Ctrl+${keyString}`;
-  }
-  if (event.altKey) {
-    keyString = `Alt+${keyString}`;
-  }
-  if (event.metaKey) {
-    keyString = `Meta+${keyString}`;
-  }
-  keyString += keyStringMap[event.keyCode] || "Unknown";
-  return keyString;
-}
-
-export { keyStringMap };
+export default keyStringMap;

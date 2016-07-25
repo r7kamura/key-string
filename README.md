@@ -11,9 +11,10 @@ npm install key-string
 ## Usage
 
 ```js
-import detect from "key-string"
+import { detectKeyString } from "key-string"
+
 document.addEventListener('keydown', (event) => {
-  console.log(detect(event)); //=> "Alt+Ctrl+Return"
+  console.log(detectKeyString(event)); //=> "Alt+Ctrl+Return"
 });
 ```
 
