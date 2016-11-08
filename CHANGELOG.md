@@ -1,3 +1,11 @@
+## 0.2.5
+
+- Fix missing extensions in imports
+
+## 0.2.4
+
+- Recompile code
+
 ## 0.2.3
 - Change export style
 
