@@ -1,7 +1,7 @@
 {
   "name": "key-string",
   "description": "Detect keyboard event type from KeyboardEvent.",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "author": "Ryo Nakamura <r7kamura@gmail.com> (https://github.com/r7kamura)",
   "devDependencies": {
     "babel-cli": "^6.11.4",
