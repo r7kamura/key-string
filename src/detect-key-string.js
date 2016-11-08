@@ -1,4 +1,4 @@
-import keyStringMap from "./key-string-map";
+import keyStringMap from "./key-string-map.js";
 
 /**
  * @param event {KeyboardEvent}
