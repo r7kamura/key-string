@@ -21,6 +21,13 @@ document.addEventListener('keydown', (event) => {
 });
 ```
 
+## Available Modifiers
+
+- `Alt`
+- `Ctrl`
+- `Meta`
+- `Shift`
+
 ## Development
 
 ### Set up
