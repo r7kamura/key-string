@@ -1,4 +1,7 @@
-# key-string [![Build Status](https://travis-ci.org/r7kamura/key-string.svg?branch=master)](https://travis-ci.org/r7kamura/key-string)
+# key-string
+
+[![npm](https://img.shields.io/npm/v/key-string.svg)](https://www.npmjs.com/package/key-string)
+[![Build Status](https://travis-ci.org/r7kamura/key-string.svg?branch=master)](https://travis-ci.org/r7kamura/key-string)
 
 Detect keyboard event type from KeyboardEvent.
 
