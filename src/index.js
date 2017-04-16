@@ -1,5 +1,5 @@
-import detectKeyString from "./detect-key-string.js";
-import keyStringMap from "./key-string-map.js";
+import detectKeyString from "./detectKeyString.js";
+import keyStringMap from "./keyStringMap.js";
 
 export {
   detectKeyString,
