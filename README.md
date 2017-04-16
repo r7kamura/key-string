@@ -7,7 +7,7 @@ Detect keyboard event type from KeyboardEvent.
 
 ## Install
 
-```sh
+```bash
 yarn add key-string
 ```
 
@@ -32,20 +32,28 @@ document.addEventListener("keydown", (event) => {
 
 ### Set up
 
-```sh
+```bash
 yarn install
 ```
 
 ### Build
 
-```sh
+```bash
 yarn run build
 ```
 
 ### Test
 
-```sh
+```bash
 yarn run test
+```
+
+### Publish
+
+```bash
+yarn run build
+cd dist
+npm run publish
 ```
 
 ## Inspired by

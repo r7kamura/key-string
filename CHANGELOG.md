@@ -1,3 +1,7 @@
+## Unreleased
+
+- Change packaged files structure
+
 ## 0.2.5
 
 - Fix missing extensions in imports

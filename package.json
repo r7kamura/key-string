@@ -10,23 +10,22 @@
     "babel-preset-stage-3": "^6.11.0",
     "eslint": "^3.1.1",
     "fixpack": "^2.3.1",
-    "mocha": "^2.5.3"
+    "mocha": "^2.5.3",
+    "npm-run-all": "^4.0.2"
   },
-  "files": [
-    "lib",
-    "src"
-  ],
   "license": "MIT",
-  "main": "lib/index.js",
+  "main": "index.js",
   "repository": "https://github.com/r7kamura/key-string",
   "scripts": {
-    "build": "npm run build:rm && npm run build:js",
-    "build:js": "babel src --out-dir lib",
-    "build:rm": "rm -rf lib",
-    "lint": "npm run lint:eslint && npm run lint:fixpack",
+    "build": "run-s build:rm build:mkdir build:cp build:babel",
+    "build:babel": "babel src --out-dir dist",
+    "build:cp": "cp package.json LICENSE.txt README.md dist",
+    "build:mkdir": "mkdir dist",
+    "build:rm": "rm -rf dist",
+    "lint": "yarn run lint:eslint && yarn run lint:fixpack",
     "lint:eslint": "eslint {src,test}/**/*.js",
     "lint:fixpack": "fixpack | grep 'already clean'",
-    "test": "npm run lint && npm run test:mocha",
+    "test": "yarn run lint && yarn run test:mocha",
     "test:mocha": "mocha --compilers js:babel-core/register"
   }
 }
