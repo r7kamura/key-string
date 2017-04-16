@@ -53,7 +53,7 @@ yarn run test
 ```bash
 yarn run build
 cd dist
-npm run publish
+npm publish
 ```
 
 ## Inspired by
