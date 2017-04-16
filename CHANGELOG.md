@@ -1,4 +1,4 @@
-## Unreleased
+## v0.3.0
 
 - Add support for some symbols
 - Change packaged files structure
