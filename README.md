@@ -8,7 +8,7 @@ Detect keyboard event type from KeyboardEvent.
 ## Install
 
 ```sh
-npm install key-string
+yarn add key-string
 ```
 
 ## Usage
@@ -33,19 +33,19 @@ document.addEventListener('keydown', (event) => {
 ### Set up
 
 ```sh
-npm install
+yarn install
 ```
 
 ### Build
 
 ```sh
-npm run build
+yarn run build
 ```
 
 ### Test
 
 ```sh
-npm run test
+yarn run test
 ```
 
 ## Inspired by
