@@ -1,5 +1,5 @@
 import assert from "assert";
-import { detectKeyString } from "../src/index";
+import detectKeyString from "../src/detectKeyString";
 
 describe("detect", () => {
   it("detects Return", () => {

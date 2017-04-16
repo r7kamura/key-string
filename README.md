@@ -14,7 +14,7 @@ yarn add key-string
 ## Usage
 
 ```js
-import { detectKeyString } from "key-string"
+import detectKeyString from "key-string/detectKeyString"
 
 document.addEventListener("keydown", (event) => {
   console.log(detectKeyString(event)); //=> "Alt+Ctrl+Return"
