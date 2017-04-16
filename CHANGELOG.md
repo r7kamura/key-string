@@ -1,5 +1,6 @@
 ## Unreleased
 
+- Add support for some symbols
 - Change packaged files structure
 
 ## 0.2.5
